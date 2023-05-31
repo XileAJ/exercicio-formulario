@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="formulariodesc">
+            <h1>Fomulário de Pesquisa</h1>
+            <h2>Obrigado por fazer parte dessa experiência.</h2>
+        </div>
+    </header>
+    <div class="container">
+        <form class="form" method="POST" action="blablabla.php" enctype="multipart/form-data">
+            <div class="formgroup">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="2">
+            </div>
+            <div class="formgroup">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="formgroup">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="10" max="99" placeholder="Digite sua idade" required>
+            </div>
+            <div class="formgroup">
+                <label for="dropdown">Quanto tempo por dia você consegue se dedicar aos estudos?</label>
+                <select id="dropdown" name="tempo-de-estudo">
+                    <option value="disable selected value">Escolha uma opção</option>
+                    <option value="3/5hour">De 3 a 5 horas por dia</option>
+                    <option value="5/8hour">De 5 a 8 horas por dia</option>
+                    <option value="weekend">Apenas algumas horas do final de semana</option>
+                    <option value="nothing">Não consigo me dedicar em momento algum</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+            <div class="form-radio-checkbox">
+                <label for="pergunta">Utiliza algum curso online para estudar?</label>
+                <label>
+                    <input type="radio" name="recommended" value="sim" class="input-radio">Sim
+                </label>
+                <label>
+                    <input type="radio" name="recommended" value="não" class="input-radio">Não
+                </label>
+                <label>
+                    <input type="radio" name="recommended" value="As vezes" class="input-radio">Às vezes
+                </label>
+            </div>
+            <div class="formgroup">
+                <label for="dropdown2">Qual dessas áreas você considera ter mais aptidão?</label>
+                <select id="dropdown2" name="aptidão">
+                    <option value="disable selected value">Escolha uma opção</option>
+                    <option value="frontend">Front-end</option>
+                    <option value="backend">Back-end</option>
+                    <option value="ux/ui">UX/UI</option>
+                    <option value="webdesign">Web Design</option>
+                    <option value="devops">DevOps</option>
+                    <option value="segurança">Segurança da Informação</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+            <div class="form-radio-checkbox">
+                <label for="pergunta">Quais tecnologias gostaria de aprimorar?</label>
+                <label>
+                    <input type="checkbox" name="recommended" value="html" class="input-radio">Html
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="css" class="input-radio">Css
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="javascript" class="input-radio">Javascript
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="bancodedados" class="input-radio">Banco de Dados
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="react" class="input-radio">React Native
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="nodejs" class="input-radio">Node js
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="bootstrap" class="input-radio">Bootstrap
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="flutter" class="input-radio">Flutter
+                </label>
+                <label>
+                    <input type="checkbox" name="recommended" value="outros" class="input-radio">Outros
+                </label>
+            </div>
+            <div class="formgroup" id="curriculo">
+                <label for="arquivo">Enviar Currículo:</label>
+                <input type="file" name="document" accept=".doc, .docx, .pdf" />
+            </div>
+            <div class="form-textarea">
+                <label for="mensagem">Algum comentário ou sugestão?</label>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="6" placeholder="Digite aqui sua mensagem"></textarea>
+            </div>
+            <div class="formgroup">
+                <button class="active" onclick="enviar()">Enviar</button>
+            </div>
+           
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footermenu">
+                <div class="icons">
+                    <a href="https://github.com/XileAJ">
+                        <img src="assets/images/github.png" id="github">
+                    </a>
+                    <a href="https://www.instagram.com/xileaj/">
+                        <img src="assets/images/instagram.png">
+                    </a>
+                </div>
+                <div class="autordesc">
+                    <p>Created by: Gileno Oliveira (XileAJ)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
