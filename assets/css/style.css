@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    
+   
 
 }
 .formulariodesc h1,h2{
@@ -44,13 +44,14 @@ body{
     display: flex;
     justify-content: center; 
     margin-top: 30px;
-   
+    width: 100%;
+    max-width: 700px;
 }
 .form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 700px;
+    max-width: 700px;
     background-color: #d9ecef;
     border-radius: 3px;
     padding: 30px;
@@ -140,7 +141,7 @@ button{
 footer{
     margin: 0;
     padding: 0;
-    width: 100%;
+    
 }
 .footermenu{
     display: flex;
@@ -148,9 +149,14 @@ footer{
     align-items: center;
     margin: 0;
     width: 100%;
+   
+    
 }
+
 .icons{
    display: flex;
+   align-items: center;
+    
 }
 
 .icons img {
@@ -177,4 +183,61 @@ footer{
 }
 footer .container{
     margin-top: 10px;
+}
+
+
+/* Estilos gerais aqui */
+
+/* Media query para telas com largura máxima de 700px */
+@media screen and (max-width: 700px) {
+    body {
+        background-size: cover; /* Ajusta o tamanho do plano de fundo */
+    }
+
+    .container, .form {
+        width: 100%; /* Preencher a largura da tela */
+        padding: 20px; /* Adicionar espaçamento interno */
+    }
+
+    .icons img {
+        width: 40px; /* Ajusta o tamanho dos ícones de redes sociais */
+        height: 40px;
+    }
+
+    .autordesc p {
+        font-size: 14px; /* Ajusta o tamanho da fonte do autor */
+    }
+
+    .formgroup, .form-radio-checkbox, .form-textarea {
+        width: 100%; /* Ajusta a largura dos elementos do formulário */
+    }
+
+    .formgroup input {
+        margin-bottom: 12px; /* Reduz o espaçamento entre os campos do formulário */
+    }
+
+    .formulariodesc {
+        align-items: center; /* Alinha o conteúdo ao centro */
+        text-align: center; /* Centraliza o texto no centro */
+    }
+}
+
+/* Media query para telas com largura máxima de 425px */
+@media screen and (max-width: 425px) {
+    .icons img {
+        width: 40px; /* Reduz o tamanho dos ícones das redes sociais */
+        height: 40px;
+    }
+
+    .autordesc p {
+        font-size: 12px; /* Reduz o tamanho da fonte do autor */
+    }
+
+    .form label {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos rótulos */
+    }
+
+    .formgroup input, .form-textarea textarea {
+        padding: 6px; /* Reduz o padding interno nos campos do formulário */
+    }
 }
