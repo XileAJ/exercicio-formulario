@@ -23,6 +23,7 @@ body{
    
 
 }
+
 .formulariodesc h1,h2{
     color: white;
     margin: 0;
@@ -228,7 +229,12 @@ footer .container{
         width: 40px; /* Reduz o tamanho dos ícones das redes sociais */
         height: 40px;
     }
-
+    .formulariodesc h1{
+        font-size: 28px;
+       }
+       .formulariodesc h2{
+        font-size: 16px;
+       }
     .autordesc p {
         font-size: 12px; /* Reduz o tamanho da fonte do autor */
     }
